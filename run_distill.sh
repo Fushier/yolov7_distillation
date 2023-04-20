@@ -1,0 +1,1 @@
+python train_distill.py --workers 8 --device 1 --batch-size 16 --epochs 100 --data data/voc.yaml --cfg cfg/training/yolov7-tiny.yaml --weights '' --hyp data/hyp.scratch.p5.yaml --t_weights weights/yolov7x_pre_voc.pt -a 10.0 -b 0.4 --s-hook-layer 1 8 15 22 --t-hook-layer 3 18 33 48
